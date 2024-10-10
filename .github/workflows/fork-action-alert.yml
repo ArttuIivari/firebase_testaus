@@ -1,0 +1,11 @@
+name: Fork action alert
+run-name: ${{ github.actor }} is hacking into your matrix!!
+on: [fork]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      #- name: Get current date
+        #id: date
+        #run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+      - run: echo "Someone has stolen (forked) your repo at $(date +'%Y-%m-%d')"
